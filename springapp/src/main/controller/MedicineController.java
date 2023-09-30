@@ -1,14 +1,12 @@
-// MedicineController.java
-package yourpackage.controller;
-
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
-@RequestMapping("/medicines")
+@RequestMapping("/medicines")  // Make sure the controller maps to "/medicines"
 public class MedicineController {
     private Map<Integer, Medicine> medicineStore = new ConcurrentHashMap<>();
     private AtomicInteger idGenerator = new AtomicInteger(1);

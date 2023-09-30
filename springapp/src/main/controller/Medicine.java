@@ -1,6 +1,3 @@
-// Medicine.java
-package yourpackage.controller;
-
 public class Medicine {
     private int medicineId;
     private String medicineName;
@@ -9,7 +6,9 @@ public class Medicine {
     private String description;
 
     // Constructors, getters, and setters
+
     public Medicine() {
+        // Default constructor
     }
 
     public Medicine(int medicineId, String medicineName, float price, int quantity, String description) {
